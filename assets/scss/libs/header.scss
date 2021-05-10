@@ -82,6 +82,13 @@
                     align-items: center;
                     justify-content: center;
                     border: 1px solid #00B6EF;
+                    transition: all 0.3s;
+                    &:hover{
+                        background: #00B6EF;
+                        i{
+                            color: #FFFFFF;
+                        }
+                    }
                     i{
                         font-size: 15px;
                         color: #00B6EF;
@@ -96,6 +103,16 @@
                     align-items: center;
                     justify-content: center;
                     border: 1px solid #00B6EF;
+                    transition: all 0.3s;
+                    &:hover{
+                        background: #00B6EF;
+                        i{
+                            color: #FFFFFF;
+                        }
+                        span{
+                            color: #FFFFFF;
+                        }
+                    }
                     i{
                         font-size: 20px;
                         color: #00B6EF;
@@ -112,6 +129,13 @@
                     align-items: center;
                     justify-content: center;
                     border: 1px solid #00B6EF;
+                    transition: all 0.3s;
+                    &:hover{
+                        background: #00B6EF;
+                        i{
+                            color: #FFFFFF;
+                        }
+                    }
                     i{
                         font-size: 15px;
                         color: #00B6EF;
@@ -353,11 +377,19 @@
                 letter-spacing: 0.05em;
                 text-transform: uppercase;
                 font-family: 'GT Eesti Pro Display Medium';
+                transition: all 0.3s;
+                &:hover{
+                    color: #f87700;
+                    i{
+                        color: #f87700;
+                    }
+                }
                 i{
                     color: #00B6EF;
                     font-size: 12px;
                     margin-right: 10px;
                     display: inline-block;
+                    transition: all 0.3s;
                 }
             }
             nav{
@@ -380,6 +412,13 @@
                             letter-spacing: 0.05em;
                             text-transform: uppercase;
                             font-family: 'GT Eesti Pro Display Medium';
+                            transition: all 0.3s;
+                            &:hover{
+                                color: #00B6EF;
+                                i{
+                                    color: #00B6EF;
+                                }
+                            }
                         }
                     }
                     .stock{
@@ -389,6 +428,7 @@
                                 font-size: 16px;
                                 color: #f87700;
                                 margin-right: 6px;
+                                transition: all 0.3s;
                             }
                         }
                     }
