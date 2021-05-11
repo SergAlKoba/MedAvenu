@@ -1001,4 +1001,132 @@
     }
 }
 
+.medical-center-slider {
+    padding-bottom: 53px;
+    .slick-arrow{
+        left: 0;
+        bottom: 0;
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+        position: absolute;
+        border-radius: 50%;
+        background: #FFFFFF;
+        border: 1px solid #E3E8EA;
+        transition: all 0.3s;
+        &:hover{
+            background: #2980B9;
+            border: 1px solid #2980B9;
+            i{
+                color: #ffffff;
+            }
+        }
+        i{
+            top: 50%;
+            left: 50%;
+            font-size: 15px;
+            color: #2980B9;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .slick-disabled{
+        opacity: 0.5;
+    }
+    .prev{
+        left: 15px;
+    }
+    .next{
+        left: 70px;
+    }
+    .medical-center-item{
+        padding: 0 15px;
+        margin-bottom: 13px;
+        img{
+            width: 100%;
+            display: flex;
+        }
+    }
+    @media (min-width: 540px) {
+        padding-bottom: 47px;
+        .prev {
+            left: 41px;
+        }
+        .next {
+            left: 96px;
+        }
+        .medical-center-item {
+            padding: 0 41px;
+            margin-bottom: 19px;
+        }
+    }
+    @media (min-width: 1024px) {
+        padding-bottom: 0;
+        .slick-list{
+            padding-left: 192px;
+        }
+        .slick-arrow{
+            top: 49%;
+            z-index: 4;
+            bottom: initial;
+            transform: translate(0, -50%);
+        }
+        .next {
+            left: 169px;
+        }
+        .prev {
+            left: 113px;
+        }
+        .medical-center-item {
+            padding: 0;
+            margin-bottom: 0;
+            margin-right: 1px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .prev {
+            left: 22px;
+        }
+        .next {
+            left: 78px;
+        }
+        .slick-list {
+            padding-left: 100px;
+        }
+    }
+    @media (min-width: 1400px) {
+        
+    }
+    @media (min-width: 1600px) {
+        .slick-list {
+            padding-left: 62px;
+        }
+        .slick-arrow{
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            i {
+                font-size: 20px;
+            }
+        }
+        .next {
+            left: 102px;
+        }
+        .prev {
+            left: 28px;
+        }
+    }
+    @media (min-width: 1800px) {
+        .slick-list {
+            padding-left: 130px;
+        }
+        .next {
+            left: 108px;
+        }
+        .prev {
+            left: 34px;
+        }
+    }
+}
+
 
