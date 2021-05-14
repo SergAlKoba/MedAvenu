@@ -1129,4 +1129,213 @@
     }
 }
 
-
+.specialists {
+    padding: 50px 0 35px;
+    .specialists-content{
+        margin-bottom: 49px;
+    }
+    .title{
+        margin-bottom: 28px;
+        h2{
+            margin-top: 0;
+            display: block;
+            font-size: 30px;
+            color: #000000;            
+            line-height: 35px;
+            font-weight: normal;
+            font-family: 'GT Eesti Pro Display Regular';
+        }
+    }
+    .text{
+        p{
+            font-size: 14px;
+            color: #3F3F3F;
+            line-height: 20px;
+            margin-bottom: 40px;
+        }
+        ul{
+            display: flex;
+            li{
+                margin-right: 28px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                i{
+                    display: block;
+                    font-size: 50px;
+                    color: #00B6EF;
+                    line-height: 50px;
+                    margin-bottom: 10px;
+                    font-family: 'GT Eesti Pro Display Regular';
+                }
+                span{
+                    display: block;
+                    font-size: 12px;
+                    color: #000000;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+    @media (min-width: 540px) {
+        .specialists-content {
+            margin-bottom: 48px;
+        }
+        .title {
+            margin-bottom: 25px;
+        }
+        .text {
+            p {
+                margin-bottom: 44px;
+            }
+            ul {
+                li {
+                    width: 25%;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 55px 0 35px;
+        .specialists-content {
+            margin-bottom: 56px;
+        }
+        .title {
+            width: 50%;
+        }
+        .text{
+            p {
+                margin-bottom: 35px;
+            }
+            ul {
+                li {
+                    width: auto;
+                    display: flex;
+                    margin-right: 20px;
+                    align-items: center;
+                    i {
+                        line-height: 48px;
+                        margin: 0 19px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 63px 0 35px;
+        .specialists-content{
+            display: flex;
+            margin-bottom: 79px;
+            justify-content: space-between;
+        }
+        .title {
+            width: 40%;
+            margin-bottom: 0;
+        }
+        .text{
+            width: 50%;
+            p {
+                margin-bottom: 39px;
+            }
+            ul{
+                li{
+                    width: 25%;
+                    margin-right: 34px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    i{
+                        margin: 0 0 10px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 85px 0 43px;
+        .title{
+            h2 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+        .text {
+            margin-top: 10px;
+            p{
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 50px;
+            }
+            ul{
+                li{
+                    width: 23%;
+                    margin-right: 45px;
+                    i{
+                        font-size: 60px;
+                        line-height: 60px;
+                    }
+                    span{
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+        .specialists-content {
+            margin-bottom: 94px;
+        }
+    }
+    @media (min-width: 1600px) {
+        padding: 118px 0 134px;
+        .specialists-content {
+            margin-bottom: 110px;
+        }
+        .title {
+            margin-left: 8px;
+            h2 {
+                font-size: 60px;
+                line-height: 70px;
+            }
+        }
+        .text {
+            margin-top: 15px;
+            p {
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 70px;
+            }
+            ul{
+                li{
+                    width: 25%;
+                    margin-right: 63px;
+                    i{
+                        font-size: 100px;
+                        line-height: 100px;
+                    }
+                    span{
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1800px) {
+        padding: 145px 0 134px;
+        .specialists-content {
+            margin-bottom: 79px;
+        }
+        .title{
+            margin-left: 0;
+        }
+        .text {
+            margin-top: 33px;
+            ul {
+                li {
+                    width: 23%;
+                    margin-right: 115px;
+                }
+            }
+        }
+    }
+}
