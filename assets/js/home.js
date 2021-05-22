@@ -115,6 +115,10 @@ $(function(){
         $('.promotions .text h4').matchHeight({
             byRow: false
         }); 
+        
+        $('.reviews-item p').matchHeight({
+            byRow: false
+        }); 
 
     }
 
