@@ -1,4 +1,7 @@
 @import 'libs/slick';
+@import 'libs/branches';
+@import 'libs/tagline';
+@import 'libs/subscription';
 
 .banner {
     padding: 40px 0;
@@ -3029,6 +3032,567 @@
         .all-reviews {
             top: 48px;
             right: 125px;
+        }
+    }
+}
+
+.center-news {
+    padding: 20px 0 25px;
+    .title{
+        margin-bottom: 29px;
+        h2{
+            display: block;
+            font-size: 30px;
+            color: #000000;            
+            line-height: 35px;
+            font-weight: normal;
+            font-family: 'GT Eesti Pro Display Regular';
+        }
+    }
+    .news-content{
+        .center-news-item{
+            position: relative;
+            margin-bottom: 31px;
+            &:nth-child(3){
+                display: none;
+            }
+            a{
+                top: 0;
+                left: 0;
+                z-index: 4;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            .img{
+                position: relative;
+                margin-bottom: 21px;
+                &::after{
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    z-index: 0;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background: rgba(28, 83, 142, 0.2);
+                }
+                ul{
+                    top: 14px;
+                    left: 15px;
+                    z-index: 1;
+                    display: flex;
+                    position: absolute;
+                    align-items: center;
+                    justify-content: center;
+                    li{
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                        line-height: 17px;
+                        margin-right: 9px;
+                        border-radius: 30px;
+                        padding: 4px 9px 2px;
+                        text-transform: uppercase;
+                        border: 1px solid #FFFFFF;
+                        font-family: 'GT Eesti Pro Display Medium';
+                    }
+                }
+                img{
+                    width: 100%;
+                    display: flex;
+                }
+            }
+            p{
+                font-size: 16px;
+                color: #0F1728;
+                line-height: 19px;
+                padding-right: 15px;
+                font-family: 'GT Eesti Pro Display Regular';
+            }
+        }
+    }
+    .all-news{
+        width: 148px;
+        height: 50px;
+        display: flex;
+        font-size: 14px;
+        color: #00B6EF;
+        margin-top: -6px;
+        line-height: 20px;
+        border-radius: 73px;
+        align-items: center;
+        transition: all 0.3s;
+        justify-content: center;
+        border: 1px solid #00B6EF;
+        font-family: 'GT Eesti Pro Display Regular';
+        i{
+            font-size: 20px;
+            color: #00B6EF;
+            margin-left: 5px;
+            display: inline-block;
+            transform: translate(7px, 0);
+            transition: all 0.3s;
+        }
+        &:hover{
+            color: #fff;
+            background: #00B6EF;
+            i{
+                color: #fff;
+            }
+        }
+    }
+    @media (min-width: 540px) {
+        .title{
+            margin-bottom: 29px;
+        }
+        .news-content {
+            .center-news-item {
+                margin-bottom: 39px;
+                .img {
+                    margin-bottom: 19px;
+                }
+            }
+        }
+        .all-news {
+            margin-top: -10px;
+        }
+    }
+    @media (min-width: 768px){
+        .news-content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            .center-news-item {
+                width: 50%;
+                margin-bottom: 0;
+                position: relative;
+                &::before{
+                    content: '';
+                    top: 0;
+                    right: 0;
+                    width: 1px;
+                    z-index: 3;
+                    height: 100%;
+                    position: absolute;
+                    background: #FFFFFF;
+                }
+            }
+        }
+        .all-news{
+            margin: 0;
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 30px 0;
+        .title {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                width: 50%;
+            }
+        }
+        .news-content {
+            margin-bottom: 34px;
+            .center-news-item {
+                .img {
+                    margin-bottom: 14px;
+                }
+                p{
+                    padding-right: 90px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 34px 0 35px;
+        .title {
+            margin-bottom: 47px;
+            padding-right: 162px;
+            h2{
+                width: 35%;
+            }
+        }
+        .news-content {
+            margin-bottom: 0;
+            .center-news-item {
+                width: 33.33%;
+                &:nth-child(3){
+                    display: block;
+                }
+                .img {
+                    margin-bottom: 9px;
+                    ul{
+                        top: 20px;
+                        left: 20px;
+                    }
+                }
+                p {
+                    padding-right: 25px;
+                }
+            }
+        }
+        .all-news{
+            top: -4px;
+            z-index: 3;
+            right: 100px;        
+            position: absolute;
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 43px 0 30px;
+        .title {
+            margin-bottom: 35px;
+            padding-right: 207px;
+            h2 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+        .news-content {
+            .center-news-item {
+                .img {
+                    margin-bottom: 14px;
+                    ul {
+                        top: 18px;
+                        left: 22px;
+                        li {
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-right: 8px;
+                            padding: 3px 9px 1px;
+                        }
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+        .all-news {
+            top: -2px;
+            right: 100px;
+            width: 160px;
+            font-size: 16px;
+            i {
+                font-size: 22px;
+                margin-left: 3px;
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        padding: 70px 0 60px;
+        .title {
+            margin-left: 4px;
+            margin-bottom: 66px;
+            padding-right: 278px;
+            h2 {
+                width: 40%;
+                font-size: 60px;
+                line-height: 70px;
+            }
+        }
+        .news-content {
+            .center-news-item {
+                .img {
+                    margin-bottom: 28px;
+                    ul {
+                        top: 29px;
+                        left: 26px;
+                        li {
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin-right: 10px;
+                            padding: 4px 11px 2px;
+                        }
+                    }
+                }
+                p{
+                    font-size: 22px;
+                    line-height: 26px;
+                    padding-right: 50px;
+                }
+            }
+        }
+        .all-news {
+            top: 11px;
+            right: 60px;
+            width: 230px;
+            height: 64px;
+            font-size: 22px;
+            i {
+                font-size: 24px;
+                margin-left: 5px;
+            }
+        }
+    }
+    @media (min-width: 1800px) {
+        padding: 61px 0 60px;
+        .title {
+            margin-bottom: 69px;
+            .appraisal {
+                margin-top: 28px;
+            }
+        }
+        .news-content {
+            .center-news-item {
+                .img{
+                    margin-bottom: 22px;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 28px;
+                    padding-right: 110px;
+                }
+            }
+        }
+        .all-news {
+            top: 10px;
+            right: 125px;
+        }
+    }
+}
+
+.center-press {
+    padding: 20px 0 25px;
+    .center-press-items{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 25px;
+        align-items: center;
+        .center-press-item{
+            width: 50%;
+            position: relative;
+            &:nth-child(3){
+                display: none;
+            }
+            &:nth-child(4){
+                display: none;
+            }
+            a{
+                top: 0;
+                left: 0;
+                z-index: 3;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            img{
+                width: 175px;
+                margin-bottom: 5px;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+            p{
+                font-size: 12px;
+                padding: 0 20px;
+                color: #3F3F3F;
+                line-height: 14px;
+                font-family: 'GT Eesti Pro Display Regular';
+            }
+        }
+    }
+    .all-press{
+        width: 303px;
+        height: 50px;
+        display: flex;
+        font-size: 14px;
+        color: #00B6EF;
+        line-height: 20px;
+        border-radius: 73px;
+        align-items: center;
+        transition: all 0.3s;
+        justify-content: center;
+        border: 1px solid #00B6EF;
+        font-family: 'GT Eesti Pro Display Regular';
+        i{
+            font-size: 20px;
+            color: #00B6EF;
+            margin-left: 5px;
+            display: inline-block;
+            transform: translate(7px, 0);
+            transition: all 0.3s;
+        }
+        &:hover{
+            color: #fff;
+            background: #00B6EF;
+            i{
+                color: #fff;
+            }
+        }
+    }
+    @media (min-width: 540px) {
+        .center-press-items {
+            margin: 0 -4% 34px;
+            .center-press-item {
+                width: 29.33%;
+                margin: 0 2%;
+                &:nth-child(3){
+                    display: block;
+                }
+                img{
+                    width: 100%;
+                }
+                p{
+                    padding: 0 12px;
+                }
+            }
+        }
+    }
+    @media (min-width: 768px){
+        .center-press-items {
+            .center-press-item {
+                width: 21%;
+                margin: 0 2%;
+                &:nth-child(4){
+                    display: block;
+                }
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        padding: 16px 0 30px;
+        .center-press-items {
+            margin: 0 -3% 25px;
+            .center-press-item {
+                img {
+                    margin-bottom: 1px;
+                }
+                p{
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 22px 0 35px;
+        .center-press-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .center-press-items {
+            margin: 0 0 0 20px;
+            .center-press-item {
+                width: 16.6%;
+                margin: 0 71px 0 0;
+                &:last-child{
+                    margin-right: 0;
+                }
+                img {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        .all-press{
+            border: 0;
+            width: 190px;
+            height: auto;
+            font-size: 12px;
+            line-height: 15px;
+            position: relative;
+            text-align: center;
+            padding: 70px 16px 0;
+            &:hover{
+                color: #00b6ef;
+                background: transparent;
+                i{
+                    color: #fff;
+                    background: #00b6ef;
+                    border: 1px solid #00b6ef;
+                }
+            }
+            i {
+                top: 0;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                margin-left: 0;
+                font-size: 30px;
+                color: #00b6ef;
+                position: absolute;
+                border-radius: 50%;
+                transform: translate(-50%, 0);
+                border: 1px solid #00b6ef;
+                &::before{
+                    top: 50%;
+                    left: 50%;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+    @media (min-width: 1400px) {
+        padding: 22px 0 30px;
+        .center-press-items {
+            .center-press-item {
+                width: 17%;
+                margin: 0 82px 0 0;
+                img {
+                    margin-bottom: 20px;
+                }
+                p {
+                    padding: 0 5px;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+        .all-press {
+            width: 245px;
+            font-size: 14px;
+            padding: 86px 35px 0;
+            i {
+                width: 60px;
+                height: 60px;
+                font-size: 32px;
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        padding: 48px 0 60px;
+        .center-press-items {
+            .center-press-item {
+                width: 19%;
+                margin: 0 80px 0 0;
+                p {
+                    padding: 0 7px;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+        .all-press{
+            width: 304px;
+            font-size: 18px;
+            line-height: 22px;
+            padding: 106px 48px 0;
+            i{
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+    @media (min-width: 1800px) {
+        padding: 16px 0 90px;
+        .center-press-items {
+            margin: 0 0 0 26px;
+            .center-press-item {
+                width: 16.4%;
+                margin: 0 125px 0 0;
+                img {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        .all-press {
+            width: 308px;
+            padding: 106px 50px 0;
         }
     }
 }
