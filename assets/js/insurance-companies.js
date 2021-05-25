@@ -1,4 +1,5 @@
 $(function(){
+    jcf.replaceAll();
 
     if($(window).width() >= 1024){
 
@@ -49,20 +50,4 @@ $(function(){
         });
 
     }
-
-    $('.currencies li').on('click', function(){
-        $('.currencies li').removeClass('active');
-        $(this).addClass('active');
-    });
-
-    $(".accordionjs").accordionjs({
-        // activeIndex : false,
-    });
-
-});
-
-$(window).resize(function(){
-
-
-    
-});
+})
