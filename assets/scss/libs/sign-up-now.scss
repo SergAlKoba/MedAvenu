@@ -1,6 +1,8 @@
 .sign-up-now {
     .sign-up-now-content{
         margin: 0 -15px;
+        overflow: hidden;
+        position: relative;
         background: #00B6EF;
         padding: 45px 15px 49px;
         .text{
@@ -71,36 +73,78 @@
                 }
             }
         }
+        .img{
+            display: none;
+        }
     }
     @media (min-width: 540px) {
         .sign-up-now-content {
-            margin: 0 -40px;
+            margin: 0 -40px 20px;
             padding: 45px 40px 50px;
         }
     }
-    @media (min-width: 1024px) {
-        @media (min-width: 540px) {
-            .sign-up-now-content {
-                margin: 0;
-                padding: 45px 40px 50px;
-                .text {
-                    width: 50%;
-                    padding-right: 0;
-                    h3 {
-                        font-size: 36px;
-                        margin-right: 0;
-                        line-height: 40px;
-                    }
-                    p{
-                        font-size: 16px;
-                        line-height: 20px;
-                    }
+    @media (min-width: 768px) {
+        .sign-up-now-content {
+            .text{
+                width: 50%;
+            }
+            .img{
+                top: 0;
+                right: 50px;
+                width: 340px;
+                height: 100%;
+                display: block;
+                position: absolute;
+                img{
+                    top: -40px;
+                    right: 0;
+                    z-index: 0;
+                    width: 250px;
+                    height: 250px;
+                    position: absolute;
+                    border-radius: 50%;
+                }
+                &::after{
+                    content: '';
+                    left: 0;
+                    bottom: -40px;
+                    z-index: 1;
+                    width: 250px;
+                    opacity: 0.1;
+                    height: 250px;
+                    border-radius: 50%;
+                    position: absolute;
+                    background: #FFFFFF;
                 }
             }
-        }   
+        }
+    }
+    @media (min-width: 1024px) {
+        .sign-up-now-content {
+            margin: 0 0 40px;
+            padding: 45px 40px 50px;
+            .text {
+                width: 50%;
+                padding-right: 0;
+                h3 {
+                    font-size: 36px;
+                    margin-right: 0;
+                    line-height: 40px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            .img {
+                right: -30px;
+            }
+        }  
     }
     @media (min-width: 1200px) {
         .sign-up-now-content{
+            margin: 0 0 50px;
+            padding: 50px 60px 50px;
             .text {
                 width: 46%;
             }
@@ -114,10 +158,16 @@
                     margin-right: 20px;
                 }
             }
+            .img {
+                right: 50px;
+                width: 380px;
+            }
         }
     }
     @media (min-width: 1400px) {
         .sign-up-now-content{
+            margin: 0 0 60px;
+            padding: 60px 70px 60px;
             .text{
                 width: 43%;
                 h3 {
@@ -147,10 +197,26 @@
                     }
                 }
             }
+            .img {
+                right: 60px;
+                width: 430px;
+                img {
+                    top: -60px;
+                    width: 300px;
+                    height: 300px;
+                }
+                &::after{
+                    width: 300px;
+                    bottom: -90px;
+                    height: 300px;
+                }
+            }
         }
     }
     @media (min-width: 1600px) {
         .sign-up-now-content{
+            margin: 0 0 90px;
+            padding: 70px 80px 74px;
             .text {
                 width: 36%;
                 h3 {
@@ -179,6 +245,20 @@
                     }
                 }
             }
+            .img {
+                right: 60px;
+                width: 620px;
+                img {
+                    top: -60px;
+                    width: 400px;
+                    height: 400px;
+                }
+                &::after{
+                    width: 400px;
+                    height: 400px;
+                    bottom: -90px;
+                }
+            }
         }
     }
     @media (min-width: 1800px) {
@@ -193,9 +273,23 @@
                     line-height: 58px;
                     margin-bottom: 30px;
                 }
-                .text p {
+                p {
                     font-size: 22px;
                     line-height: 31px;
+                }
+            }
+            .img {
+                right: 86px;
+                width: 650px;
+                img {
+                    top: -45px;
+                    width: 440px;
+                    height: 440px;
+                }
+                &::after{
+                    width: 440px;
+                    height: 440px;
+                    bottom: -125px;
                 }
             }
         }
